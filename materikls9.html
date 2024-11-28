@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelas 9 - Persamaan Linear Dua Variabel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #0077b6;
+        }
+
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+
+        .navbar-brand:hover, .nav-link:hover {
+            color: #ffb703 !important;
+        }
+
+        h1 {
+            color: #023047;
+            font-size: 3rem;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #0077b6;
+            font-size: 1.8rem;
+            margin-top: 20px;
+            border-bottom: 2px solid #023047;
+            padding-bottom: 5px;
+        }
+
+        .container {
+            width: 85%;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            background-color: #e1eefa;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .card-header {
+            background-color: #0077b6;
+        }
+
+        .card-header .nav-link {
+            color: #fff;
+        }
+
+        .card-body {
+            background-color: #e1eefa;
+        }
+
+        .card-title {
+            color: #023047;
+        }
+
+        .card-text {
+            color: #555;
+        }
+
+        .btn-primary {
+            background-color: #ffb703;
+            border-color: #ffb703;
+        }
+
+        .btn-primary:hover {
+            background-color: #faa307;
+            border-color: #faa307;
+        }
+
+        footer {
+            background-color: #023047;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #ffb703;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home materi kls 9.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="pendaahuluan.html">Pendahuluan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="materikls9.html">Materi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="latihansoal.html">Latihan Soal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Persamaan Linear Dua Variabel</h1>
+        <iframe
+            style="width: 100%; max-width: 800px; height: auto; aspect-ratio: 16/9"
+            src="https://www.youtube.com/embed/NVILDia8qqg?si=ZD5Dl-M5q6HueIHc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+        ></iframe>
+
+        <h2>Definisi Persamaan Linear Dua Variabel</h2>
+        <p>Persamaan linear dua variabel adalah persamaan yang memiliki dua variabel dan memiliki bentuk umum seperti:</p>
+        <div class="box">
+            <p><strong>Bentuk Umum:</strong> <em>ax + by = c</em></p>
+        </div>
+        <p>Di mana:</p>
+        <ul>
+            <li><strong>x</strong> dan <strong>y</strong> adalah variabel.</li>
+            <li><strong>a</strong>, <strong>b</strong>, dan <strong>c</strong> adalah konstanta (bilangan real).</li>
+        </ul>
+        <p>Penyelesaian dari persamaan linear dua variabel yang berbentuk ax + by = c dapat ditentukan dengan mencari bilangan-bilangan pengganti variabel x dan y yang menyebabkan persamaan linear tersebut benar. Penyelesaian persamaan linear dua variabel dapat ditulis dalam bentuk pasangan berurutan (x, y), sedangkan himpunan penyelesaian dari persamaan linear dua variabel adalah himpunan dari semua pasangan berurutan yang merupakan penyelesaian dari persamaan linear dua variabel.</p>
+
+        <h2>Memodelkan Persamaan Linear Dua Variabel</h2>
+        <p>Salah satu contoh dari permasalahan persamaan linear dua variabel adalah:</p>
+        <div class="box">
+            <p>Tissa pergi ke toko alat tulis. Ia membeli 3 buku tulis dan 5 bolpoin dengan membayar Rp19.000,00. Buatlah model matematika dari permasalahan tersebut.</p>
+        </div>
+        <p><strong>Alternatif Penyelesaian:</strong></p>
+        <p>Misalkan <em>m</em> menyatakan harga 1 buku tulis dan <em>n</em> menyatakan harga 1 bolpoin. Dengan demikian, persamaan linear dua variabel adalah:</p>
+        <p><strong>3m + 5n = 19.000</strong></p>
+        <p>Apabila <em>m = 3.000</em>, maka diperoleh:</p>
+        <p><strong>3(3.000) + 5n = 19.000</strong></p>
+        <p><strong>n = 2.000</strong></p>
+        <p>Pasangan berurutan penyelesaian adalah <strong>(3.000, 2.000)</strong>.</p>
+        <p>Apabila harga 1 buku tulis Rp3.000,00 maka harga 1 bolpoin Rp2.000,00. Pasangan berurutan (3.000, 2.000) merupakan salah satu penyelesaian dari persamaan 3m + 5n = 19.000.</p>
+        <p>Apakah hanya (3.000, 2.000) penyelesaian dari persamaan tersebut? Tentu saja tidak. Apabila nilai 𝑚 berubah maka nilai 𝑛 bergantung pada nilai 𝑚, begitu pun sebaliknya.</p>
+
+        <h2>Penyelesaian Persamaan Linear Dua Variabel</h2>
+        <p><strong>Tentukan himpunan penyelesaian dari persamaan linear dua variabel 2x + y = 8, jika nilai x dan y adalah bilangan cacah:</strong></p>
+        <div class="box">
+            <p>Tentukan himpunan penyelesaian dari persamaan linear dua variabel 2x + y = 8, jika nilai x dan y adalah bilangan cacah</p>
+        </div>
+        <p><strong>Alternatif Penyelesaian:</strong></p>
+        <p>Misalkan nilai x = 1 dan y = 5, nilai x dan y tersebut merupakan bilangan cacah tetapi tidak memenuhi persamaan 2x + y = 8. Nilai x = 5 dan y = -2 memenuhi persamaan 2x + y = 8, tetapi nilai y bukan bilangan cacah. Nilai x = 1 dan y = 6 merupakan bilangan cacah dan memenuhi persamaan 2x + y = 8. Bilangan cacah x dan y yang memenuhi persamaan 2x + y = 8 dapat kalian lihat pada Tabel</p>
+        <img src="Screenshot 2024-10-03 175716.png" alt="">
+        <p>Jadi, himpunan penyelesaian dari persamaan linear dua variabel 2x + y = 8 dengan nilai x dan y merupakan bilangan cacah adalah {(0,8),(1,6),(2,4),(3,2),(4,0)}.</p>
+    </div>
+
+    <div class="container">
+        <div class="card text-center">
+            <div class="card-header">
+                <ul class="nav nav-pills card-header-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Pendidikan Matematika</h5>
+                <p class="card-text">Fakultas Keguruan dan Ilmu Pendidikan.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Matematika Kelas 9 </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

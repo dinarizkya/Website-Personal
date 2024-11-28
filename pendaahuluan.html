@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelas 9 - Persamaan Linear Dua Variabel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+       body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #0077b6;
+        }
+
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+
+        .navbar-brand:hover, .nav-link:hover {
+            color: #ffb703 !important;
+        }
+
+        h1 {
+            color: #023047;
+            font-size: 3rem;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #0077b6;
+            font-size: 1.8rem;
+            margin-top: 20px;
+            border-bottom: 2px solid #023047;
+            padding-bottom: 5px;
+        }
+
+        .container {
+            width: 85%;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            background-color: #e1eefa;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .card-header {
+            background-color: #0077b6;
+        }
+
+        .card-header .nav-link {
+            color: #fff;
+        }
+
+        .card-body {
+            background-color: #e1eefa;
+        }
+
+        .card-title {
+            color: #023047;
+        }
+
+        .card-text {
+            color: #555;
+        }
+
+        .btn-primary {
+            background-color: #ffb703;
+            border-color: #ffb703;
+        }
+
+        .btn-primary:hover {
+            background-color: #faa307;
+            border-color: #faa307;
+        }
+
+        footer {
+            background-color: #023047;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #ffb703;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home materi kls 9.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="pendaahuluan.html">Pendahuluan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="materikls9.html">Materi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="latihansoal.html">Latihan Soal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Konsep Persamaan Linear Dua Variabel</h1>
+        <p>Budi pergi ke pasar untuk membeli dua jenis barang yaitu apel dan jeruk. Harga 1 kg apel adalah Rp15.000,00 dan harga 1 kg jeruk adalah Rp12.000,00. Budi membeli 3 kg apel dan 2 kg jeruk.</p>
+        
+        <form id="soalForm">
+            <div class="mb-3 text-start">
+                <label for="jawaban1" class="form-label"><strong>1. Tentukan jumlah uang yang dikeluarkan Budi untuk membeli apel dan jeruk!</strong></label>
+                <input type="text" class="form-control" id="jawaban1" placeholder="Masukkan jawaban Anda">
+            </div>
+            <div class="mb-3 text-start">
+                <label for="jawaban2" class="form-label"><strong>2. Misalkan 
+                    𝑥 adalah jumlah kg apel yang dibeli, dan 
+                    𝑦 adalah jumlah kg jeruk yang dibeli. Buatlah model matematika yang menggambarkan jumlah uang yang dikeluarkan oleh Budi untuk membeli apel dan jeruk.</strong></label>
+                <textarea class="form-control" id="jawaban2" rows="3" placeholder="Masukkan jawaban Anda"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="submitJawaban()">Kirim Jawaban</button>
+        </form>
+    </div>
+</div>
+</div>
+
+<script>
+function submitJawaban() {
+    const jawaban1 = document.getElementById('jawaban1').value;
+    const jawaban2 = document.getElementById('jawaban2').value;
+
+    const jawabanBenar1 = "Rp69.000,00"; 
+    const jawabanBenar2 = "15.000x+12.000y=69.000";
+
+    let hasil = "Jawaban Anda:\n\n";
+    let validasi = true;
+
+    // Validasi Jawaban
+    if (jawaban1.toLowerCase().includes(jawabanBenar1.toLowerCase())) {
+        hasil += "1. Benar\n";
+    } else {
+        hasil += "1. Salah, Jawaban yang benar adalah: " + jawabanBenar1 + "\n";
+        validasi = false;
+    }
+
+    if (jawaban2.toLowerCase().includes(jawabanBenar2.toLowerCase())) {
+        hasil += "2. Benar\n";
+    } else {
+        hasil += "2. Salah, Jawaban yang benar adalah: " + jawabanBenar2 + "\n";
+        validasi = false;
+    }
+
+
+    if (validasi) {
+        alert(hasil);
+    } else {
+        alert(hasil);
+    }
+}
+</script>
+
+<div class="container">
+    <div class="card text-center">
+        <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Pendidikan Matematika</h5>
+            <p class="card-text">Fakultas Keguruan dan Ilmu Pendidikan.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2024 Matematika Kelas 9 </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+    
